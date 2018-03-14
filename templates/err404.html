@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stanley Wedding</title>
+
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon-heart.ico') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab:bold|Nunito">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/load-image/load-image.all.min.js') }}"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" class="img-responsive center-block logo" alt="Stanley Wedding">
+
+        <h3 class="text-center subheader">Navigation Page</h3>
+
+        <span id="page-error" class="alert alert-danger center-block"><strong>Error!</strong> The requested URL could not be found.</span>
+
+        <br />
+
+        <div class="text-center nav-buttons">
+            <a href="/upload" id="upload" class="btn btn-default">Upload Photo</a>
+            <a href="/view" id="view" class="btn btn-default">View Photos</a>
+        </div>
+
+        <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+    </div>
+</body>
+
+</html>

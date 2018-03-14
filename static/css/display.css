@@ -1,0 +1,130 @@
+body, html {
+    background-color:   #f2f2f2;
+    font-family:        'Nunito', sans-serif;
+    color:              #1a1a1a;
+    height:             100%;
+    margin:             0;
+    overflow-x:         hidden;
+    overflow-y:         hidden;
+}
+
+.header {
+    font-family:        'Josefin Slab', serif;
+    color:              #404040;
+}
+
+.splash-container {
+    background-color:   #f2f2f2;
+    height:             100%;
+    overflow:           hidden;
+}
+
+.splash-content {
+    position:           absolute;
+    top:                50%;
+    left:               50%;
+    margin-right:       -50%;
+    -webkit-transform:  translate(-50%, -50%);
+    -ms-transform:      translate(-50%, -50%);
+    transform:          translate(-50%, -50%);
+    -webkit-animation:  fadein 2s;
+    -moz-animation:     fadein 2s;
+    -ms-animation:      fadein 2s;
+    -o-animation:       fadein 2s;
+    animation:          fadein 2s;
+}
+
+.main-container {
+    position:           absolute;
+    top:                0;
+    left:               0;
+    right:              0;
+    height:             85vh;
+    background-color:   #666666;
+}
+
+.slide-image {
+    position:           absolute;
+    top:                0;
+    left:               50%;
+    margin-right:       -50%;
+    -webkit-transform:  translate(-50%, 0);
+    -ms-transform:      translate(-50%, 0);
+    transform:          translate(-50%, 0);
+    height:             100%;
+    width:              auto;
+}
+
+.slide-text {
+    position:           absolute;
+    bottom:             0;
+    height:             10vh;
+    width:              100%;
+    background-color:   rgba(102, 102, 102, 0.75);
+}
+
+.slide-text-content {
+    text-align:         center;
+}
+
+.category {
+    font-family:        'Josefin Slab', serif;
+    font-weight:        bold;
+    color:              #f2f2f2;
+    margin:             20px auto 5px;
+}
+
+.url-container {
+    position:           absolute;
+    width:              100%;
+    bottom:             0;
+    left:               0;
+}
+
+.url-header {
+    font-family:        'Josefin Slab', serif;
+    color:              #333333;
+    text-align:         center;
+    margin:             0px auto 5px;
+}
+
+.url-text {
+    font-family:        'Arial', sans-serif;
+    font-weight:        bold;
+    font-size:          52px;
+    color:              #333333;
+    text-align:         center;
+    margin:             10px auto 10px;
+}
+
+.caption {
+    font-family:        'Josefin Slab', serif;
+    font-weight:        bold;
+    color:              #bfbfbf;
+    margin:             5px;
+}
+
+@keyframes fadein {
+    from                { opacity: 0; }
+    to                  { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from                { opacity: 0; }
+    to                  { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from                { opacity: 0; }
+    to                  { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from                { opacity: 0; }
+    to                  { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from                { opacity: 0; }
+    to                  { opacity: 1; }
+}

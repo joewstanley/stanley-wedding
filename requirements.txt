@@ -1,0 +1,5 @@
+Flask==0.11.1
+cf-deployment-tracker==1.0.4
+cloudant==2.4.0
+Pillow==4.1.1
+exifread==2.1.2

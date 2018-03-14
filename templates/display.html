@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stanley Wedding</title>
+
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon-heart.ico') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab:bold|Nunito">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/display.css') }}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/load-image/load-image.all.min.js') }}"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="splash-container">
+            <div class="splash-content">
+                <img src="{{ url_for('static', filename='images/splash_animation.gif') }}" class="img-responsive center-block loader" alt="Wedding Load Animation">
+                <h1 class="page-header text-center header">Wedding Slideshow</h1>
+            </div>
+        </div>
+
+        <div class="main-container" style="display:none;">
+            <img class="center-block slide-image active" src="/image/host?id=0">
+            <img class="center-block slide-image inactive" src="#" style="display:none;">
+
+            <div class="slide-text">
+                <div class="slide-text-content">
+                    <span class="spacer" style="margin:30px;display:none;"></span>
+                    <h1 class="category">#Wedding</h1>
+                    <h4 class="caption">Steven & Nikki Stanley</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="center-block url-container" style="display:none;">
+            <h3 class="url-header">Upload or View Images at the Following URL:</h3>
+            <h1 class="url-text">www.stanleywedding.mybluemix.net/</h1>
+            <br />
+        </div>
+
+        <input type="hidden" id="category-value" value="#Wedding">
+        <input type="hidden" id="caption-value" value="Steven & Nikki Stanley">
+
+        <script src="{{ url_for('static', filename='js/display.js') }}"></script>
+    </div>
+</body>
+
+</html>
